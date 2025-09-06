@@ -43,7 +43,6 @@ class FreescalekinetisPlatform(PlatformBase):
                     self.packages[p]["optional"] = False
             if not IS_WINDOWS:
                 self.packages["tool-gperf"]["optional"] = False
-                
 
         jlink_conds = [
             "jlink" in variables.get(option, "")
